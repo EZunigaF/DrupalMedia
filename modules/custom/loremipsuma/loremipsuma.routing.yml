@@ -1,0 +1,16 @@
+# Routes of Installation 
+loremipsuma.generate:
+  path: "/loremipsuma/generate/{paragraphs}/{phrases}"
+  defaults:
+    _controller: '\Drupal\loremipsuma\Controller\LoremIpsumaController::generate'
+  requirements:
+    _permission: "generate lorem ipsuma"
+
+loremipsuma.form:
+  path: "/admin/config/development/loremipsuma"
+  defaults: 
+    _form: '\Drupal\loremipsuma\Form\LoremIpsumaForm'
+    _title: "Lorem ipsuma settings"
+   requirements:
+    _permission: "generate lorem ipsuma"
+

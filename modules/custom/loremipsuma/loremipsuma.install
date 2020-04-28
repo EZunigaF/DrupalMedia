@@ -1,0 +1,10 @@
+ <?php
+ // Installation functions 
+ use Drupal\user\RoleInterface;
+ // hook(module) install ()
+ function loremipsuma_install()
+ {
+        user_role_change_permissions(RoleInterface::ANONYMOUS_ID, [
+            'generate lorem ipsum' => TRUE
+            ]);
+ }

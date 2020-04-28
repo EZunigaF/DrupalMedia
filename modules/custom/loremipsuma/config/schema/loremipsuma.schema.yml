@@ -1,0 +1,30 @@
+#Guess who's back 420
+
+#Database structure, creating tables and rows of our config 
+loremipsuma settings:
+# creating config field 
+    type: config_object
+    #config of our module//
+    label: "Lorem Ipsuma settings"
+    # lorem ipsuma objetc has a Map with the two fields of sttings.yml 
+    mapping:
+      loremipsuma:
+         type: mapping
+         mapping:
+            page_title:
+              type: text
+              label: "Lorem ipsuma generator page title"
+            source_text:
+              type: text
+              label: "Source text for lorem ipsuma generation:"
+
+#Creating a block for the webpage           
+#This is for config of all files of the config files we use (including the ones in blank)   
+block settings loremipsuma_block:
+  type: block_settings
+  label: "Lorem ipsuma block"
+  mapping:
+    loremipsuma_block_settings:
+      type: text
+      label: "Lorem ipsuma block settings"
+

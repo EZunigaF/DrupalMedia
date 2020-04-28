@@ -1,0 +1,6 @@
+name: Lorem Ipsuma
+type: module
+description: 'Lorem IPSUMA generator for Drupal'
+package: Development
+core: 8.x
+configure: loremipsuma.form
