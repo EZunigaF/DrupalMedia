@@ -1,12 +1,12 @@
-<?php 
+<?php
 // Se incluyen diferentes hooks (Hook Help> functions ->)
-use Drupal\Core\Routing\RouteMatchInterface; 
+use Drupal\Core\Routing\RouteMatchInterface;
 
 
-function loremipsuma_help($route_name, RouteMatchInterface $route_match){ 
+function loremipsuma_help($route_name, RouteMatchInterface $route_match){
     switch($route_name){
         case 'help.page.loremimpsuma':
-            // t() -> traductions action 
+            // t() -> traductions action
             return t('
                 <h2>Lorem ipsum generator for Drupal.</h2>
                 <h3>Instructions</h3>
@@ -32,8 +32,8 @@ function loremipsuma_theme($existing, $type, $theme, $path)
     //array of vars
     $variables = [
 
-        // module name and variables to include in the site | REQUIRE: Variables to use and Template = Return 
-        'loremipsuma' => 
+        // module name and variables to include in the site | REQUIRE: Variables to use and Template = Return
+        'loremipsuma' =>
         [
             'variables' =>
             [
@@ -42,7 +42,7 @@ function loremipsuma_theme($existing, $type, $theme, $path)
                 'template' => 'loremipsuma'
         ]
     ];
-    return $variables
+    return $variables;
 }
 
 function template_preprocess_loremipsuma(&$variables)

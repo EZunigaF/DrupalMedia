@@ -47,9 +47,6 @@ class LoremIpsumaController
 			$element['#theme'] = 'loremipsuma';
 
 			return $element;
-
 		}
-
-
     }
 }
