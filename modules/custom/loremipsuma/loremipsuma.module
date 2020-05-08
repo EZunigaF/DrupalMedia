@@ -5,7 +5,7 @@ use Drupal\Core\Routing\RouteMatchInterface;
 
 function loremipsuma_help($route_name, RouteMatchInterface $route_match){
     switch($route_name){
-        case 'help.page.loremimpsuma':
+        case 'help.page.loremipsuma':
             // t() -> traductions action
             return t('
                 <h2>Lorem ipsum generator for Drupal.</h2>
