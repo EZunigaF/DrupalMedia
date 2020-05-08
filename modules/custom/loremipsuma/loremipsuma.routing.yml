@@ -12,5 +12,5 @@ loremipsuma.form:
     _form: '\Drupal\loremipsuma\Form\LoremIpsumaForm'
     _title: "Lorem ipsuma settings"
    requirements:
-    _permission: "generate lorem ipsum"
+    _permission: "administer site configuration"
 

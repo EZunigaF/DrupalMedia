@@ -7,6 +7,15 @@ use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Session\AccountInterface;
 
+/**
+ * Provides a Lorem ipsum block with which you can generate dummy text anywhere.
+ *
+ * @Block(
+ *   id = "loremipsuma_block",
+ *   admin_label = @Translation("Lorem ipsum block"),
+ * )
+ */
+
 class LoremIpsumaBlock extends BlockBase
 {
 
